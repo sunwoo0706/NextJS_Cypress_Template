@@ -5,6 +5,7 @@ import { css } from '@emotion/react';
 const Home: NextPage = () => {
   return (
     <div
+      id="holy"
       css={css`
         color: red;
       `}
