@@ -2,12 +2,18 @@
   "name": "next-template",
   "version": "0.1.0",
   "private": true,
+  "eslintConfig": {
+    "extends": [
+      "plugin:cypress/recommended"
+    ]
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "cypress": "cypress open"
+    "cypress": "cypress open",
+    "cypress:headless": "cypress run"
   },
   "dependencies": {
     "@emotion/react": "^11.8.2",
@@ -27,13 +33,21 @@
     "@typescript-eslint/eslint-plugin": "^5.15.0",
     "@typescript-eslint/parser": "^5.15.0",
     "cypress": "^9.5.4",
+    "cypress-react-selector": "^2.3.17",
     "eslint": "8.11.0",
     "eslint-config-next": "12.1.0",
     "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-cypress": "^2.12.1",
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-react": "^7.29.4",
     "prettier": "^2.6.0",
+    "resq": "^1.10.2",
     "typescript": "4.6.2"
   },
-  "packageManager": "yarn@3.2.0"
+  "packageManager": "yarn@3.2.0",
+  "dependenciesMeta": {
+    "resq@1.10.2": {
+      "unplugged": true
+    }
+  }
 }
