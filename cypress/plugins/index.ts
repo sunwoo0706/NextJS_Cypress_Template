@@ -1,13 +1,10 @@
-// cypress/plugins/index.ts
-
 /// <reference types="cypress" />
 
-import path = require('path');
-import fs = require('fs');
+import * as path from 'path';
+import * as fs from 'fs';
 
-/**
- * @type {Cypress.PluginConfig}
- */
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-ignore
 module.exports = (on, config) => {
   on('task', {
     getResqFilePath() {
